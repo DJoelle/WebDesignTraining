@@ -1,0 +1,217 @@
+$colorGreen:#76C7C1;
+$colorGreen1:rgb(53, 154, 146);
+$colorRed:#e9645b;
+$colorTitre: #fffedd;
+$colorTexte: #3e3e3e;
+$colorSmallTitre: #7f8b85;
+$colorTexte1: #909090;
+$policeTitre:"Arial";
+$policeTexte:"Adobe Gothic Std B";
+
+.colorRed{
+    color: $colorRed;
+};
+
+.colorGreen{
+    color: $colorGreen;
+};
+
+body{
+   margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+};
+
+.headerbar{
+    margin: 0;
+    background-color: $colorGreen;
+    min-height: 75px;
+    line-height: 75px;
+    
+    .headerBarre{
+        min-height: 75px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        .logo{
+            color: $colorTitre;
+            font-weight: 900;
+            font-size: 25px;
+            
+            span{
+                font-weight: 100;
+                font-size: 20px;
+            };
+        };
+        
+        #menu{
+            margin-left: 100px;
+            
+            li a{
+                color: $colorTitre;
+                border-radius: 4px;
+                
+                ul li{
+                    background-color: $colorRed;
+                };
+            };
+            
+            a:hover{
+                background-color: $colorGreen1;
+                box-shadow: 0px 4px 2px #388479;
+            };
+            
+            /*a:after, a:visited{
+                background-color: $colorRed;
+                box-shadow: 0px 4px 2px #ce4040;
+            };*/
+            
+        };
+    };
+    
+    .searchIcon{
+        min-height: 45px;
+        line-height: 50px;
+        color: $colorTitre;
+    };
+   
+};
+
+.baniere{
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 500px;
+    background-color: black;
+    
+};
+
+.corps{
+    margin: 0;
+    padding: 0;
+    min-height: 600px;
+    
+    #line{
+        margin-top: 20px;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 20px;
+        width: auto;
+    };
+    
+    .trait{
+        min-height: 5px;
+        width: 60px;
+        display: inline-block;
+        background-color: #bcbcbc;
+        margin: 3px;
+        
+        
+    };
+    
+    #trait1{
+        margin-left: 15px;
+    };
+    
+    #trait2{
+        background-color: $colorRed;
+    };
+    
+    .services{
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: #efefef;
+        height: auto;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        min-height: 100px;
+        
+        h3{
+            color: #7f8b85;
+            font-size: 30px
+        };
+        
+        #summary{
+            color: $colorTexte1;
+            margin-bottom: 30px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            padding: 0;
+        };
+        
+        .bouton{
+            margin-top: 30px;
+        };
+    };
+    
+    .grids{
+        
+        margin-top: 40px;
+        
+        .colones{
+            
+            border-radius: 5px;
+            text-align: center;
+            width: 23%;
+            padding: 20px;
+            height: 300px;
+            box-shadow: 0px 4px 2px #d9dbdb;
+            color: $colorTexte1;
+            
+            h4{
+                color: $colorSmallTitre;
+                font-family: $policeTitre;
+                font-weight: bold;
+                
+                
+                p{
+                    font-family: $policeTexte;
+                    color: $colorTexte1;
+                };
+            };
+            
+            /*#colBout1{
+                margin-top: px;
+            };
+            
+            #colBout2{
+                margin-top: px;
+            };
+            
+            #colBout3{
+                margin-top: px;
+            };
+            
+            #colBout4{
+                margin-top: px;
+            };*/
+            
+        };
+        
+        #col1{
+            margin-left: 0px;
+            background-color: #fff;
+        };
+        
+        #col2{
+            margin-left: 31px;
+            background-color: rgba(255, 255, 255, 0.5);
+        };
+        
+        #col3{
+            margin-left: 31px;
+            background-color: rgba(255, 255, 255, 0.5);
+        };
+        
+        #col4{
+            margin-left: 31px;
+            margin-right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        };
+    };
+    
+};

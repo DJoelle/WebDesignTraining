@@ -1,0 +1,32 @@
+{
+  "name": "WebDesingTraining",
+  "authors": [
+    "DJoelle <ddouandj@yahoo.fr>"
+  ],
+  "description": "Projet d'initiation au webdesign et ses outils",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://github.com/DJoelle/WebDesignTraining",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/plugins/",
+    "test",
+    "tests"
+  ],
+ 
+  "dependencies": {
+    "Blur": null,
+    "Blur.js": "0.2.0",
+    "animate.css": "3.5.1",
+    "bootstrap": "3.3.6",
+    "jquery": "2.2.3",
+    "font-awesome": "4.6.2",
+    "getbootstrap": null,
+    "jquery-knob": "1.2.13",
+    "morph-text": "1.0.2"
+  }
+  
+}
