@@ -3,62 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>WebDesignTraining</title>
-
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/plugins/960-Grid-System-master/code/css/min/960.css">
-    <link rel="stylesheet" href="assets/plugins/960-Grid-System-master/code/css/min/reset.css">
-    <link rel="stylesheet" href="assets/plugins/960-Grid-System-master/code/css/min/text.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/scss/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-  
     
-    <nav class="navbar navbar-default headerbar">
-        <div class="container headerBarre">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand logo" href="#">WEBDESIGN <span>Training</span></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="menu">
-                    <li><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Portfolio 2 column page</a></li>
-                            <li><a href="#">Portfolio 2 column page</a></li>
-                            <li><a href="#">Portfolio 2 column page</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+    <div class="container-fluid barreNav">
+        <div role="navigation">
+            <div class="container boutonNav">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="logo"><a href="#">WEBDESIGN<SPAN class="training"> Training</SPAN></a></h1>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="nav nav-pills">
+                            <li role="navigation" class="navBouton"><a href="#">HOME</a></li>
+                            <li role="presentation" class="navBoutonb"><a href="#">ABOUT</a></li>
+                            <li role="presentation" class="navBouton"><a href="#">SERVICES</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something</a></li>
+                                    <li><a href="#">Something else</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="navBouton"><a href="#">BLOG</a></li>
+                            <li role="presentation" class="navBouton"><a href="#">FEATURES</a></li>
+                            <li role="presentation" class="navBouton"><a href="#">CONTACTS</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">CONTACTS</a></li>
-                </ul>
-                <div class="glyphicon glyphicon-search searchIcon pull-right"></div>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+  
+   
     <div class="container-fluid">
         <div class="baniere">
-            <div class="slider">
-                <div class="slideTop"></div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+                <div class="carousel-inner slide" role="listbox">
+                    <div class="item active">
+                        <img src="assets/images/slide1.jpg" alt="slide1">    
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/slide2.jpg" alt="slide2">
+                    </div>
+                    
+                </div>
+                  <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="fa fa-angle-double-left fa-2x" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="fa fa-angle-double-right fa-2x" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
@@ -80,45 +85,50 @@
                     </div>
                     <div class="col-md-2">
                         <p class="bouton">
-                            <button type="button" class="btn btn-danger btn-lg pull-right">VIEW MORE</button>
+                            <button type="button" class="btn btn-danger btn-danger btn-lg">VIEW MORE</button>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="grids">
-                    <div class="col-md-3 colones" id="col1">1
+                    <div class="col-md-3 colones" id="col1">
+                        <i class="fa fa-thumbs-o-up fa-5x colorRed"></i>
                         <h4>SUSPENDISSE</h4> 
                         <P>Lorem ipsum dolor sit amet,adipisicing elit. Voluptatum facilis non, expedita corrupti fugit.</P>
                         
                         <p class="colBouton" id="colBout1">
-                            <button type="button" class="btn btn-danger btn-lg">VIEW MORE</button>
+                            <button type="button" class="btn btn-lg">read more</button>
                         </p>
                     </div>
-                    <div class="col-md-3 colones" id="col2">2
+                    <div class="col-md-3 colones" id="col2">
+                       
+                        <i class="fa fa-key fa-5x colorGreen"></i>
                         <h4>MAECENAS</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci officiis voluptate soluta consectetur, vitae nam id.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci officiis voluptate soluta.
                         </p>
                         
                         <p class="colBouton" id="colBout2">
-                            <button type="button" class="btn btn-lg">VIEW MORE</button>
+                            <button type="button" class="btn btn-lg">read more</button>
                         </p>
                     </div>
-                    <div class="col-md-3 colones" id="col3">3
+                    <div class="col-md-3 colones" id="col3">
+                        <i class="fa fa-flag-o fa-5x colorGreen" aria-hidden="true"></i>
                         <h4>ALIQUAM</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, repellat.</p>
                         
                         <p class="colBouton" id="colBout3">
-                            <button type="button" class="btn btn-lg">VIEW MORE</button>
+                            <button type="button" class="btn btn-lg">read more</button>
                         </p>
                     </div>
-                    <div class="col-md-3 colones" id="col4">4
+                    <div class="col-md-3 colones" id="col4">
+                        <i class="fa fa-flask fa-5x colorGreen" aria-hidden="true"></i>
                         <h4>HABITASSE</h4>
                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cumque, facere quo!</P>
                         
                         <p class="colBouton" id="colBout4">
-                            <button type="button" class="btn btn-lg">VIEW MORE</button>
+                            <button type="button" class="btn btn-lg">read more</button>
                         </p>
                     </div>
                 </div>
@@ -127,12 +137,167 @@
     </div>
     
     <div class="container-fluid">
+        <div class="bg-parallax">
+            <div class="bg-shadow">
+                <div class="text">
+                    <h4 class="parllaxT">WHY MODUS VERSUS?</h4>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus id, consequuntur magnam repellendus!</P>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <img class="tripleImage" src="assets/images/templates.png" alt="templates">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="container">
+        <div class="row down">
+            <div class="col-md-3">
+                <h5>Why Chouse Us?</h5>
+                <ul class="downList">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Quisque at massa ipsum</li> <br>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Maecenas a lorem augue,egestas</li> <br>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Consectetur adipisicing elit</li> <br>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Ipsa neque possimus impedit</li> <br>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Nostrum maiores maxime atque</li> <br>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<li class="item">Lorem ipsum dolor sit amet</li> <br>
+                </ul> 
+            </div>
+            <div class="col-md-6">
+                <p class="miniP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iusto rerum <span class="miniPspan">exercitationem perferendis</span>. Obcaecati id tenetur adipisicing doloremque aspernatur!</p>
+            </div>
+            <div class="col-md-3">
+                <h5>What Client's Say?</h5>
+                <p class="miniP italik">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur, maiores assumenda minus officia minima adipisci reiciendis molestiae id tenetur adipisicing ipsum recusandae!</p>
+                <h6 class="name">Jhon Doe</h6>
+            </div>
+        </div>
+        
+        <div class="row miniSlide">
+            <div class="col-md-2">   
+                <h5>Our Happy Clients</h5>
+            </div>
+            <div class="col-md-9">
+                <div class="ligne"></div>
+            </div>
+            <div class="col-md-1">
+                <div class="miniSlideBouton pull-right">
+                    <div class="col-md-6 left">
+                        <a href="#">
+                            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 right">
+                        <a href="#">
+                            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
     
+    <div class="container-fluid sectionBottomDown">
+        <div class="container">
+            <div class="row bottomDown">
+                <div class="col-md-4">
+                    <h4>MODUS<span>versus</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus aut perferendis quos sunt mollitia similique impedit perspiciatis. Iure ipsam animi reiciendis repellat suscipit hic.</p> <br>
+                    <address>Phone: <span class="italik"> (+237) 678204596 </span></address>
+                    <address>e-mial: <span class="italik">ddouandj@yahoo.fr</span></address>
+                    
+                </div>
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                        <ul class="BottomDownList">
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">About</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">FAQ</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Contact</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Terms</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Privacy</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Testimonials</li></a> <br>
+                        </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Community</h5>
+                        <ul class="BottomDownList">
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Blog</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Forum</li></a> <br>
+                           <a href="#"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Support</li></a> <br>
+                            <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <li class="item">Newsletter</li></a> <br>
+                        </ul>    
+                </div>
+                <div class="col-md-4 floatCol">
+                    <h5 class="italik">from the BLOG</h5>
+                    <a href="#">
+                        <div class="boite">
+                            <i class="fa fa-picture-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                        <p class="boiteP">Lorem ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Inventore, pariatur! <br>
+                           <span>18 May 2016</span>
+                        </p>
+                    <div class="col-md-9"></div> <br>
+                    <a href="#">
+                        <div class="boite">
+                            <i class="fa fa-picture-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                        <p class="boiteP">Lorem ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Inventore, pariatur!<br>
+                           <span>18 May 2016</span>
+                        </p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 footerP">
+                    <p>2016 ModusVersus</p>
+                </div>
+                <div class="col-md-3 col-md-offset-7 iconLink">
+                    <a href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/dropdown.js"></script>
+    <script src="assets/plugins/Bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
